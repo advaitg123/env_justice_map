@@ -1,0 +1,20 @@
+﻿GDB Fieldname,Description
+ACSTOTPOP,Total population
+MINORPCT,% people of color
+LOWINCPCT,% low-income
+LESSHSPCT,% less than high school
+LINGISOPCT,% of households (interpreted as individuals) in linguistic isolation
+UNDER5PCT,% under age 5
+OVER64PCT,% over age 64
+PRE1960PCT,% pre-1960 housing (lead paint indicator)
+VULEOPCT,"Demographic Index (based on 2 factors, % low-income and % people of color)"
+DSLPM,Diesel particulate matter level in air
+CANCER,Air toxics cancer risk
+RESP,Air toxics respiratory hazard index
+PTRAF,Traffic proximity and volume
+PWDIS,Indicator for major direct dischargers to water
+PNPL,Proximity to National Priorities List (NPL) sites
+PRMP,Proximity to Risk Management Plan (RMP) facilities
+PTSDF,Proximity to Treatment Storage and Disposal (TSDF) facilities
+OZONE,Ozone level in air
+PM25,PM2.5 level in air
