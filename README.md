@@ -1,1 +1,1 @@
-# env_justice_map
+Chicago Environmental Justice Visualising Tool
