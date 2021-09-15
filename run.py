@@ -43,7 +43,7 @@ st.sidebar.write("""
     interest is distributed around Chicago and your Community Area. Use the Scatter plot to visualise how different variables may be corrlated 
     with each, with a line of best fit. Analyse how a variable is distributed using a histogram to identify interesting peaks and variations. 
     
-    More documentation and code details are at the following github repository.
+    More documentation and code details are at the following github repository.https://github.com/advaitg123/env_justice_map/
     """)
 
 st.sidebar.title('Sources')
@@ -114,9 +114,11 @@ var2 = st.selectbox('Select your second Variable choice to plot on Y Axis:', des
 
 chicago, community = st.beta_columns(2)
 with chicago:
+    st.write('Chicago')
     plot_scatter(df_2020, dic_var [var1], dic_var [var2] )
 
 with community:
+    st.write(comm_spec)
     plot_scatter(spec_df2, dic_var [var1], dic_var [var2] )
     
 
@@ -127,9 +129,11 @@ va1 = st.selectbox('Select Variable choice to to study data distribution in hist
 
 chicago, community = st.beta_columns(2)
 with chicago:
+    st.write('Chicago')
     plot_hist(df_2020, dic_var [va1])
 
 with community:
+    st.write(comm_spec)
     plot_hist(spec_df2, dic_var [va1])
 
 
