@@ -9,8 +9,7 @@ import plotly.express as px
 from plot2 import *
 
 st.set_page_config(page_title = 'Cook County Environmental Justice Data Explorer', 
-    layout='wide',
-    page_icon='💹')
+    layout='wide')
 
 st.markdown(
     """
