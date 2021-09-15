@@ -100,8 +100,10 @@ poll_choice = st.selectbox('Select your Variable choice to plot:', desc)
 
 chicago, community = st.beta_columns(2)
 with chicago:
+    st.write('Chicago')
     plot_on_map(final_df, dic_var[poll_choice])
 with community:
+    st.write(comm_spec)
     plot_on_map(spec_df, dic_var[poll_choice])
 
 
