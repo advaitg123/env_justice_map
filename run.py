@@ -77,13 +77,6 @@ df['ID'] = df['geoid']//1000
 
 final_df = df.merge(df_2020, left_on='ID', right_on='ID')
 
-st.markdown('## Select the Community Area you wish to further study')
-
-comm_spec = st.selectbox('Community Area : ', list(comm_areas['Name']))
-
-spec_df = final_df[final_df['comm_name'] == comm_spec]
-spec_df2 = df_2020[df_2020['comm_name'] == comm_spec]
-
 variables = pd.read_csv('data/variables.csv')
 desc = list (variables['Description'])
 field = list (variables['GDB Fieldname'])
@@ -92,6 +85,15 @@ dic_var = {}
 
 for i in range(len(field)):
     dic_var[desc[i]] = field[i]
+    
+    
+st.markdown('## Select the Community Area you wish to further study')
+
+comm_spec = st.selectbox('Community Area : ', list(comm_areas['Name']))
+
+spec_df = final_df[final_df['comm_name'] == comm_spec]
+spec_df2 = df_2020[df_2020['comm_name'] == comm_spec]
+
 
 st.title('Analyse how the data is distributed on a map')
 
