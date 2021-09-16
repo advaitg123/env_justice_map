@@ -65,8 +65,6 @@ st.sidebar.write("""
     """)
 
 st.title('Chicago Environmental Justice Data Explorer')
-st.markdown('## Select the Community Area you wish to further study')
-
 
 
 comm_areas = pd.read_csv('data/chicago_comm_areas.csv')
@@ -78,6 +76,8 @@ df['geoid'] = pd.to_numeric (df['geoid10'])
 df['ID'] = df['geoid']//1000
 
 final_df = df.merge(df_2020, left_on='ID', right_on='ID')
+
+st.markdown('## Select the Community Area you wish to further study')
 
 comm_spec = st.selectbox('Community Area : ', list(comm_areas['Name']))
 
